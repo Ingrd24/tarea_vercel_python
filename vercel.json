@@ -1,19 +1,18 @@
 {
     "builds": [
         {
-            "src": "tarea_vercel_python/wsgi.py",
+            "src": "tarea_vercel_python",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
-                "rutime": "python3.9"
+                "runtime": "python3.9"
             }
-
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "tarea_vercel_python/wsgi.py"
+            "dest": "tarea_vercel_python"
         }
     ]
 }
